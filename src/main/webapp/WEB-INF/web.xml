@@ -5,10 +5,6 @@
          version="3.0">
     <display-name>Archetype Created Web Application</display-name>
 
-    <welcome-file-list>
-        <welcome-file>turnToIndex.jsp</welcome-file>
-    </welcome-file-list>
-
     <!-- 编码过滤器 -->
     <filter>
         <filter-name>encodingFilter</filter-name>
@@ -50,14 +46,12 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
-        <!-- 此处可以可以配置成*.do，对应struts的后缀习惯 /表示拦截所有请求 -->
         <url-pattern>/</url-pattern>
-<!--        <url-pattern>/welcome.html</url-pattern>-->
     </servlet-mapping>
-    <welcome-file-list>
-        <welcome-file>/index.jsp</welcome-file>
-        <welcome-file>/login.jsp</welcome-file>
-    </welcome-file-list>
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>/index.jsp</welcome-file>-->
+<!--        <welcome-file>/login.jsp</welcome-file>-->
+<!--    </welcome-file-list>-->
     <!-- 配置SESSION超时，单位是分钟 -->
     <session-config>
         <session-timeout>30</session-timeout>
@@ -103,8 +97,8 @@
     </servlet-mapping>
 
 
-    <error-page>
-        <error-code>404</error-code>
-        <location>/notfound.jsp</location>
-    </error-page>
+<!--    <error-page>-->
+<!--        <error-code>404</error-code>-->
+<!--        <location></location>-->
+<!--    </error-page>-->
 </web-app>
